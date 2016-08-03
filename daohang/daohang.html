@@ -154,13 +154,149 @@
 
 </div>
 <hr width=1100 size=5 borber=1px color=#5151A2 align=left noshade>
+<!-- 　　立方体开头-->
+
+<style>
+    @keyframes rotate-frame {
+        0% {
+            transform: rotateX(0deg) rotateY(0deg);
+        }
+        10% {
+            transform: rotateX(0deg) rotateY(180deg);
+        }
+        20% {
+            transform: rotateX(-180deg) rotateY(180deg);
+        }
+        30% {
+            transform: rotateX(-360deg) rotateY(180deg);
+        }
+        40% {
+            transform: rotateX(-360deg) rotateY(360deg);
+        }
+        50% {
+            transform: rotateX(-180deg) rotateY(360deg);
+        }
+        60% {
+            transform: rotateX(90deg) rotateY(180deg);
+        }
+        70% {
+            transform: rotateX(0) rotateY(180deg);
+        }
+        80% {
+            transform: rotateX(90deg) rotateY(90deg);
+        }
+        90% {
+            transform: rotateX(90deg) rotateY(0);
+        }
+        100% {
+            transform: rotateX(0) rotateY(0);
+        }
+    }
+
+    .my-container {
+        width: 1000px;
+        height: 500px;
+        margin: 0 auto;
+    }
+
+    .rect-wrap {
+        position: relative;
+        perspective: 1600px;
+    }
+
+    .container {
+        width: 800px;
+        height: 800px;
+        transform-style: preserve-3d;
+        transform-origin: 50% 50% 200px;
+        animation: rotate-frame 120s linear infinite;
+    }
+
+    .slide {
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.9) inset;
+    }
+
+    .top {
+        left: 200px;
+        top: -200px;
+        transform: rotateX(-90deg);
+        transform-origin: bottom;
+        background: url(http://oam9g6m4r.bkt.clouddn.com/011.jpg) no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .bottom {
+        left: 200px;
+        bottom: -200px;
+        transform: rotateX(90deg);
+        transform-origin: top;
+        background: url(http://oam9g6m4r.bkt.clouddn.com/010.jpg) no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .left {
+        left: -200px;
+        top: 200px;
+        transform: rotateY(90deg);
+        transform-origin: right;
+        background: url(http://oam9g6m4r.bkt.clouddn.com/009.jpg) no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .right {
+        left: 600px;
+        top: 200px;
+        transform: rotateY(-90deg);
+        transform-origin: left;
+        background: url(http://oam9g6m4r.bkt.clouddn.com/008.jpg) no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .front {
+        left: 200px;
+        top: 200px;
+        transform: translateZ(400px);
+        background: url(http://oam9g6m4r.bkt.clouddn.com/007.jpg) no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .back {
+        left: 200px;
+        top: 200px;
+        transform: translateZ(0);
+        background: url(http://oam9g6m4r.bkt.clouddn.com/006.jpg) no-repeat;
+        background-size: 100% 100%;
+    }
+</style>
+
+
+<div class="my-container">
+  <div class="rect-wrap">
+    <div class="container">
+          <div class="top slide"></div>
+            <div class="bottom slide"></div>
+               <div class="left slide"></div>
+                  <div class="right slide"></div>
+                   <div class="front slide">
+                   </div><
+                      <div class="back slide">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    </div>
+  </div>
+
+<!-- 　立方体　结尾:-->
+</br></br></br></br></br></br></br></br></br></br></br></br></br>
+
+<hr width=1100 size=5 borber=1px color=#5151A2 align=left noshade>
 </br>
 <div><p align="center">
-  <a  class="greenbut">ge is a body of statements of varying degrees of certainty -- some most unsure,
-  some nearly sure,none absolutely certain."</br></br>"Science is the belief in the ignorance of experts."</br></br>"I don't know anything,but I do know that everything is interesting
-  if you go into it deeply enough."</br></br>"The fge is a body of statements of varying degrees of certainty -- some most unsure,
-    some nearly sure,none absolutely certain."</br></br>"Science is the belief in the ignorance of experts."</br></br>"I don't know anything,but I do know that everything is interesting
-    if you go into it deeply enough."</br></br>"The f</a>
+  <a  class="greenbut">无能者无所求，饱食而遨游。</a>
   </p></div>
 </br>
   <p align="center" style="font-size:19px;"><a href="http://arlier.cn/" >返回我的博客</a><a style="color:#111111";> | designed by arlier</a></p>
