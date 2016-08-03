@@ -79,7 +79,7 @@ html {
  */
 /* line 77, ../compass/sass/_normalise.scss */
 
-/* 
+/*
  * Addresses font-family inconsistency between 'textarea' and other form elements.
  */
 /* line 89, ../compass/sass/_normalise.scss */
@@ -271,7 +271,7 @@ img {
 }
 
 /*
- * Corrects overflow displayed oddly in IE9 
+ * Corrects overflow displayed oddly in IE9
  */
 /* line 276, ../compass/sass/_normalise.scss */
 svg:not(:root) {
@@ -432,7 +432,7 @@ textarea {
 /* =============================================================================
    Tables
    ========================================================================== */
-/* 
+/*
  * Remove most spacing between table cells
  */
 /* line 428, ../compass/sass/_normalise.scss */
@@ -448,15 +448,15 @@ table {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
 }
-
+.bk{
+  background-image: url(http://o98383o2a.bkt.clouddn.com/gallerybg.jpg);
+  background-repeat: no-repeat;
+  /*background-size: 100% 100%;*/
+}
+.g{width:300px; height:370px; position:fixed; bottom:5%; right:.5%;}
 /* line 15, ../compass/sass/style.scss */
 body {
-  background: url("../img/noise.png"), url("../img/burst.png") center no-repeat, -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, color-stop(0%, #89683f), color-stop(100%, #ddccb7)), #bd9b71;
-  background: url("../img/noise.png"), url("../img/burst.png") center no-repeat, -webkit-radial-gradient(#89683f, #ddccb7), #bd9b71;
-  background: url("../img/noise.png"), url("../img/burst.png") center no-repeat, -moz-radial-gradient(#89683f, #ddccb7), #bd9b71;
-  background: url("../img/noise.png"), url("../img/burst.png") center no-repeat, -o-radial-gradient(#89683f, #ddccb7), #bd9b71;
-  background: url("../img/noise.png"), url("../img/burst.png") center no-repeat, -ms-radial-gradient(#89683f, #ddccb7), #bd9b71;
-  background: url("../img/noise.png"), url("../img/burst.png") center no-repeat, radial-gradient(#89683f, #ddccb7), #bd9b71;
+
   min-height: 100%;
   font-family: 'Antic Slab', arial, sans-serif;
 }
@@ -654,7 +654,7 @@ footer {
 	cursor:pointer;
 	color:#111111;
 	font-family:Arial;
-	font-size:15px;	
+	font-size:15px;
 	padding:7px 14px;
 	text-decoration:none;
 }
