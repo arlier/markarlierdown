@@ -51,8 +51,8 @@ body {
   margin: 5px 0;
 }
 .portrait .date {
-  font-size: 10px;
-  font-weight: bold;
+  font-size: 18px;
+  font-weight: normal;
 }
 .portrait .foot {
   font-size: 11px;
@@ -92,4 +92,56 @@ body {
 .close:hover {
   font-size: 20px;
   color: #DDD;
+}
+
+.backbutton {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #eae0c2), color-stop(1, #ccc2a6));
+	background:-moz-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
+	background:-webkit-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
+	background:-o-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
+	background:-ms-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
+	background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#eae0c2', endColorstr='#ccc2a6',GradientType=0);
+	background-color:#eae0c2;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:3px;
+	border:1px solid #333029;
+	display:inline-block;
+	cursor:pointer;
+	color:#505739;
+	font-family:Trebuchet MS;
+	font-size:18px;
+	padding:7px 24px;
+	text-decoration:none;
+}
+.backbutton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ccc2a6), color-stop(1, #eae0c2));
+	background:-moz-linear-gradient(top, #ccc2a6 5%, #eae0c2 100%);
+	background:-webkit-linear-gradient(top, #ccc2a6 5%, #eae0c2 100%);
+	background:-o-linear-gradient(top, #ccc2a6 5%, #eae0c2 100%);
+	background:-ms-linear-gradient(top, #ccc2a6 5%, #eae0c2 100%);
+	background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ccc2a6', endColorstr='#eae0c2',GradientType=0);
+	background-color:#ccc2a6;
+}
+.backbutton:active {
+	position:relative;
+	top:1px;
+}
+
+
+.mywords {
+  background-color:transparent;
+  	-moz-border-radius:6px;
+  	-webkit-border-radius:6px;
+  	border-radius:6px;
+  	border:1px solid #268a16;
+  	display:inline-block;
+  	cursor:none;
+  	color:#111111;
+  	font-family:“微软雅黑”;
+  	font-size:15px;
+  	padding:6px 24px;
+  	text-decoration:none;
 }
