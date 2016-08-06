@@ -83,11 +83,11 @@ body {
 
 .close {
   cursor: pointer;
-  color: #FFF;
+  color: #FF1B1B;
   position: absolute;
-  top: 4px;
-  right: 8px;
-  font-size: 18px;
+  top: 40px;
+  right: 80px;
+  font-size: 280px;
 }
 .close:hover {
   font-size: 20px;
