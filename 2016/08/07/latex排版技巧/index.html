@@ -84,18 +84,18 @@
 
 
 
-<meta name="description" content="这篇博客的目的主要是记录我在日常使用$\LaTex$排版过程中遇到的具体问题以及最后的解决办法，方便以后的查阅。目前计划以时间顺序记录。
+<meta name="description" content="这篇博客的目的主要是记录我在日常使用$\LaTeX$排版过程中遇到的具体问题以及最后的解决办法，方便以后的查阅。目前计划以时间顺序记录。
 公式编号subequations.160807 为了让一个公式的几个子公式处于相同的标号内，以abcd或者1234在内部区分，形成类似于1.1a;1.1b;1.1c;1.1d的效果，使用amsmath宏包中的subequations环境代码如下：1234567">
 <meta property="og:type" content="article">
-<meta property="og:title" content="$\LaTex$排版技巧">
+<meta property="og:title" content="$\LaTeX$排版技巧">
 <meta property="og:url" content="http://yoursite.com/2016/08/07/latex排版技巧/index.html">
 <meta property="og:site_name" content="mapping the observed world to our imagination">
-<meta property="og:description" content="这篇博客的目的主要是记录我在日常使用$\LaTex$排版过程中遇到的具体问题以及最后的解决办法，方便以后的查阅。目前计划以时间顺序记录。
+<meta property="og:description" content="这篇博客的目的主要是记录我在日常使用$\LaTeX$排版过程中遇到的具体问题以及最后的解决办法，方便以后的查阅。目前计划以时间顺序记录。
 公式编号subequations.160807 为了让一个公式的几个子公式处于相同的标号内，以abcd或者1234在内部区分，形成类似于1.1a;1.1b;1.1c;1.1d的效果，使用amsmath宏包中的subequations环境代码如下：1234567">
-<meta property="og:updated_time" content="2016-08-07T14:17:40.137Z">
+<meta property="og:updated_time" content="2016-08-07T14:24:44.465Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="$\LaTex$排版技巧">
-<meta name="twitter:description" content="这篇博客的目的主要是记录我在日常使用$\LaTex$排版过程中遇到的具体问题以及最后的解决办法，方便以后的查阅。目前计划以时间顺序记录。
+<meta name="twitter:title" content="$\LaTeX$排版技巧">
+<meta name="twitter:description" content="这篇博客的目的主要是记录我在日常使用$\LaTeX$排版过程中遇到的具体问题以及最后的解决办法，方便以后的查阅。目前计划以时间顺序记录。
 公式编号subequations.160807 为了让一个公式的几个子公式处于相同的标号内，以abcd或者1234在内部区分，形成类似于1.1a;1.1b;1.1c;1.1d的效果，使用amsmath宏包中的subequations环境代码如下：1234567">
 
 
@@ -119,7 +119,7 @@
 
   <link rel="canonical" href="http://yoursite.com/2016/08/07/latex排版技巧/"/>
 
-  <title> $\LaTex$排版技巧 | mapping the observed world to our imagination </title>
+  <title> $\LaTeX$排版技巧 | mapping the observed world to our imagination </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -265,7 +265,7 @@
             
             
               
-                $\LaTex$排版技巧
+                $\LaTeX$排版技巧
               
             
           </h1>
@@ -324,7 +324,7 @@
       
 
       
-        <p> 这篇博客的目的主要是记录我在日常使用$\LaTex$排版过程中遇到的具体问题以及最后的解决办法，方便以后的查阅。目前计划以时间顺序记录。</p>
+        <p> 这篇博客的目的主要是记录我在日常使用$\LaTeX$排版过程中遇到的具体问题以及最后的解决办法，方便以后的查阅。目前计划以时间顺序记录。</p>
 <h3 id="公式编号subequations-160807"><a href="#公式编号subequations-160807" class="headerlink" title="公式编号subequations.160807"></a>公式编号subequations.160807</h3><p> 为了让一个公式的几个子公式处于相同的标号内，以abcd或者1234在内部区分，形成类似于1.1a;1.1b;1.1c;1.1d的效果，使用amsmath宏包中的subequations环境代码如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">\begin&#123;subequations&#125;</div><div class="line"></div><div class="line">\begin&#123;equation&#125;</div><div class="line">e^&#123;+&#125;+e^&#123;-&#125;\rightarrow \gamma + \gamma</div><div class="line">\end&#123;equation&#125;</div><div class="line"></div><div class="line">\begin&#123;equation&#125;</div><div class="line">e^&#123;+&#125;+e^&#123;-&#125;\rightarrow \gamma + \gamma</div><div class="line">\end&#123;equation&#125;</div><div class="line"></div><div class="line">\end&#123;subequations&#125;</div></pre></td></tr></table></figure></p>
 <p>如需要改变标号形式，可以更新命令\theequation，例如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">\renewcommand&#123;\theequation&#125;&#123;\theparentequation-\arabic&#123;equation&#125;&#125;</div></pre></td></tr></table></figure></p>
 <p>可以将公式标号改为形如1.1-1;1.1-2的标号。</p>
